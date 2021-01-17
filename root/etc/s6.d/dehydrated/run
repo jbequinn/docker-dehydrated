@@ -14,5 +14,5 @@ if [[ "$DEHYDRATED_ACCEPT_TERMS" == "yes" ]]; then
 	su-exec ${UID}:${GID} /opt/dehydrated/dehydrated --config /data/config --register --accept-terms
 fi
 
-# Run the weekly script once
-/etc/periodic/weekly/dehydrated
+# Run the daily script once
+/etc/periodic/daily/dehydrated
