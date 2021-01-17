@@ -1,4 +1,4 @@
-FROM docker.io/alpine:3.11
+FROM docker.io/alpine:3.13
 LABEL maintainer="Jan Christian Grünhage <jcgruenhage@matrix.org>"
 
 ENV UID=1337 \
