@@ -13,8 +13,8 @@ deploy_challenge() {
     echo -n " - Setting TXT record for domain '${DOMAIN}' with DuckDNS ${TOKEN_VALUE}"
     curl "https://www.duckdns.org/update?domains=${DOMAIN}&token=${DUCKDNS_TOKEN}&txt=${TOKEN_VALUE}"
     echo
-    echo " - Waiting 30 seconds for DNS to propagate."
-    sleep 30    
+    echo " - Waiting 90 seconds for DNS to propagate."
+    sleep 90    
 }
 
 clean_challenge() {
