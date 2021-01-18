@@ -11,7 +11,7 @@ RUN apk add --no-cache \
       libffi-dev \
       build-base \
       openssl-dev \
-      py2-pip \
+      py3-pip \
  && apk add --no-cache \
       --virtual .runtime-deps \
       openssl \
@@ -22,13 +22,13 @@ RUN apk add --no-cache \
       s6 \
       su-exec \
       libxml2-utils \
-      py2-pip \
+      py3-pip \
       python3 \
  && mkdir -p /opt \
  && git clone https://github.com/jbequinn/dehydrated.git /opt/dehydrated \
- && pip3 install requests[security] \
- && pip3 install dns-lexicon \
- && pip2 install j2cli[yaml] \
+ && pip install requests[security] \
+ && pip install dns-lexicon \
+ && pip install j2cli[yaml] \
  && apk del .build-deps
 
 ENV \
