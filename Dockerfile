@@ -24,6 +24,7 @@ RUN apk add --no-cache \
       libxml2-utils \
       py3-pip \
       python3 \
+      py3-cryptography \
  && mkdir -p /opt \
  && git clone https://github.com/jbequinn/dehydrated.git /opt/dehydrated \
  && pip install requests[security] \
